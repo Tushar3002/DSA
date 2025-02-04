@@ -29,10 +29,34 @@ bool isPalindrome(string s) {
     return solve2(0, s.size() - 1, s); 
 }
 
+bool isAlphaN(char ch){
+    if((ch >= 0 && ch <= 9) || (tolower(ch) >= 'a' && tolower(ch) <= 'z')){
+        return true;
+    }
+    return false;
+}
+bool solve3(string s){
+    int st=0,end=s.length()-1;
+    while(st < end){
+        if(!isAlphaN(s[st])){
+            st++;continue;
+        }
+        if(!isAlphaN(s[end])){
+            end--; continue;
+        }
+        if(tolower(s[st]) != tolower(s[end])){
+            return false;
+        }
+        st++; end--;
+    }
+    return true;
+}
+
 int main(){
     string s="madam";
     string s2="A man, a plan, a canal: Panama";
     cout << solve(0,s2) << endl;
     cout << isPalindrome(s2) << endl;
+    cout << solve3(s2) << endl;
     return 0;
 }
