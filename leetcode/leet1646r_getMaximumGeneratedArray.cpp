@@ -12,7 +12,7 @@ typedef vector<int> vi;
 //     cin >> n;
 //     vi v(n);
 //     forn(i, n) {
-//         cin >> v[i];
+//         cin >> v[i]x;
 //     }
 //     return v;
     

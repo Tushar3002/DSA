@@ -13,13 +13,13 @@ int solve(vector<int>& v){
     int ans=tot-sum;
     return ans;
 }
-int solve(){
-    int mis=0;
-    for(int i=0;i<v.size();i++){
-        mis ^= (i+1) ^ v[i];
-    }
-    return;
-}
+// int solve1(){
+//     int mis=0;
+//     for(int i=0;i<v.size();i++){
+//         mis ^= (i+1) ^ v[i];
+//     }
+//     return mis;
+// }
 int main(){
     vector<int> v={0,1,3};
     cout << solve(v) << endl;

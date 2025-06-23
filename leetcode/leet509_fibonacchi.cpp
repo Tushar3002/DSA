@@ -20,8 +20,8 @@ int fibRec(int n){
 }
 
 int main(){
-    int n=4;
-    //cout << fib(n);
+    int n=9;
+    cout << fib(n);
     cout << fibRec(n) << endl;
     return 0;
 }

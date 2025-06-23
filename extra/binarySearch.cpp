@@ -22,6 +22,6 @@ int binarySearch(vector<int> arr,int target){//O(logn)
 int main(){
     vector<int> v={-11,-3,4,6,10,15,33,54,88,99};
     vector<int> v1={30,22,15,3,1,0};
-    cout << binarySearch(v,10) << endl;
+    cout << binarySearch(v,33) << endl;
     return 0;
 }

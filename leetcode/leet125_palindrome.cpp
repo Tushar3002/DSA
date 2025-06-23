@@ -30,7 +30,7 @@ bool isPalindrome(string s) {
 }
 
 bool isAlphaN(char ch){
-    if((ch >= 0 && ch <= 9) || (tolower(ch) >= 'a' && tolower(ch) <= 'z')){
+    if((ch >= '0' && ch <= '9') || (tolower(ch) >= 'a' && tolower(ch) <= 'z')){
         return true;
     }
     return false;

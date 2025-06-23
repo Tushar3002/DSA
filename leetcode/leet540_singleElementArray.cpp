@@ -54,5 +54,7 @@ int main(){
     vector<int> v={1,1,2,2,3,4,4};
 
     cout << solve(v) << endl;
+
+    cout << solve3(v) << endl;
     return 0; 
 }
