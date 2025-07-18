@@ -41,5 +41,6 @@ int main(){
             cout << j <<" ";
         }cout << endl;
     }
+    cout << 123;    
     return 0;
 }
